@@ -561,7 +561,7 @@ int Compaction::solve(string lpSolverFile, int timeLimit) {
         
 		if(n=="ERROR" || n=="Time" || n=="Unable" || n=="Wrote" || n=="Optimal" || n=="Model")
 			cout << endl << line;
-        if(n=="Unable" || n=="Model")
+        if(n=="infeasible")
             return 0;
     }
     

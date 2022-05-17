@@ -1,0 +1,7 @@
+set lpsolve "/opt/gurobi950/linux64/bin/gurobi_cl"
+load technology "/home/zslwyuan-laptop/Downloads/test/astran/Astran/build/Work/tech_freePDK45.rul"
+load netlist "/home/zslwyuan-laptop/Downloads/test/astran/Astran/build/Work/cells45nm.sp"
+cellgen select COMPLEX14
+cellgen autoflow
+export layout COMPLEX14 COMPLEX14.gds
+exit
